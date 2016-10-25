@@ -34,7 +34,9 @@ class ViewController: UIViewController {
             resultLabel.text = ""
             operationSelected = false
         }
-        resultLabel.text = resultLabel.text! + sender.titleLabel!.text!
+        if !(sender.titleLabel!.text! == "." && (resultLabel.text!.contains(".") || resultLabel.text! == "")) {
+            resultLabel.text = resultLabel.text! + sender.titleLabel!.text!
+        }
     }
 
     @IBAction func operationButtonPressed(_ sender: UIButton) {
