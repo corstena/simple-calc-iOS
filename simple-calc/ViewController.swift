@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    // new
+    
     @IBAction func equalsButton(_ sender: UIButton) {
         if !rpnMode {
             if resultLabel.text! != "" && !checkForOperation() {
